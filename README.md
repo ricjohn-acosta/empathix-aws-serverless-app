@@ -1,4 +1,5 @@
-# AWS serverless fullstack app
+# AWS serverless fullstack app - https://empathix-aws-serverless-app.vercel.app/
+
 ![image](https://github.com/user-attachments/assets/4a81e3eb-2193-4978-9e90-2d6236316e39)
 
 A fullstack AWS serverless fullstack app utilising API Gateway, Lambda, DynamoDB and Next.js (React)
