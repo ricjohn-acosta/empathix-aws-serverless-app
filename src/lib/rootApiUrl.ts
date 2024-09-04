@@ -1,0 +1,1 @@
+export const rootApiUrl  = 'https://6xmoqd1f7c.execute-api.ap-southeast-2.amazonaws.com/api/v1'
