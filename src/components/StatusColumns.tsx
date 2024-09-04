@@ -44,12 +44,12 @@ export const StatusColumns: FC = () => {
         setCandidates(prevCandidates =>
             prevCandidates!.map(candidate =>
                 candidate.userId === candidateData.userId
-                    ? {...candidate, status: newStatus}
+                    ? {...candidate, status: newStatus as statusType}
                     : candidate
             )
         );
 
-        updateCandidate({...candidateData, status: newStatus})
+        updateCandidate({...candidateData, status: newStatus as statusType})
     };
 
     const handleFetchCandidates = async () => {
@@ -77,13 +77,13 @@ export const StatusColumns: FC = () => {
         deleteCandidate(userId)
     };
 
-    const handleAddCandidate = async (formData) => {
+    const handleAddCandidate = async (formData: Candidate | null) => {
         // Ideally we'd have validators for this form.
         if (formData) {
             // Ideally we add the id in the lambda handler.
-            const newCandidate: Candidate = {...formData, userId: nanoid(), status: 'sourced'}
+            const newCandidate = {...formData, userId: nanoid(), status: 'sourced'} as Candidate
 
-            setCandidates(prevCandidates => [...prevCandidates, newCandidate]);
+            setCandidates(prevCandidates => [...prevCandidates as Candidate[], newCandidate]);
 
             createCandidate(newCandidate)
         }

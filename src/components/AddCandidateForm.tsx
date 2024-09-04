@@ -14,7 +14,7 @@ import {FC, useState, ChangeEvent} from "react";
 import {Candidate} from "@/components/StatusColumns";
 
 interface AddCandidateFormProps {
-    handleAddCandidate: (formData: Candidate | null) => void
+    handleAddCandidate: (formData: Candidate | null) => Promise<void>
 }
 
 const AddCandidateForm: FC<AddCandidateFormProps> = (props) => {

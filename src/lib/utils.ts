@@ -2,12 +2,12 @@ import {clsx, type ClassValue} from "clsx"
 import {twMerge} from "tailwind-merge"
 import {statusType} from "@/components/StatusColumns";
 
-export interface StatusToStepMap {
-    [key: statusType]: number;
+type StatusToStepMap = {
+    [key: string]: number;
 }
 
-export interface StepToStatusMap {
-    [key: number]: statusType;
+type StepToStatusMap = {
+    [key: number]: string;
 }
 
 export function cn(...inputs: ClassValue[]) {
