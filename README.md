@@ -2,7 +2,7 @@
 
 ![image](https://github.com/user-attachments/assets/4a81e3eb-2193-4978-9e90-2d6236316e39)
 
-A fullstack AWS serverless fullstack app utilising API Gateway, Lambda, DynamoDB and Next.js (React)
+A fullstack AWS serverless fullstack app utilising API Gateway, Lambda, DynamoDB, Next.js (React), shadcn and tailwind.
 
 ## How to run the app
 1. Clone this repository into your preferred folder
